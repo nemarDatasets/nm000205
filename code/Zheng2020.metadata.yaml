@@ -1,0 +1,172 @@
+_dataset:
+  class: Zheng2020
+  code: Zheng2020
+  doi: 10.3389/fnins.2020.579469
+  interval:
+  - 0
+  - 1
+  n_subjects: 14
+  paradigm: p300
+acquisition:
+  channel_types:
+    eeg: 62
+  hardware: Neuroscan Synamps2
+  line_freq: 50.0
+  montage: standard_1020
+  n_channels: 62
+  reference: vertex (Cz)
+  sampling_rate: 1000.0
+  sensors:
+  - FP1
+  - FPz
+  - FP2
+  - AF3
+  - AF4
+  - F7
+  - F5
+  - F3
+  - F1
+  - Fz
+  - F2
+  - F4
+  - F6
+  - F8
+  - FT7
+  - FC5
+  - FC3
+  - FC1
+  - FCz
+  - FC2
+  - FC4
+  - FC6
+  - FT8
+  - T7
+  - C5
+  - C3
+  - C1
+  - Cz
+  - C2
+  - C4
+  - C6
+  - T8
+  - TP7
+  - CP5
+  - CP3
+  - CP1
+  - CPz
+  - CP2
+  - CP4
+  - CP6
+  - TP8
+  - P7
+  - P5
+  - P3
+  - P1
+  - Pz
+  - P2
+  - P4
+  - P6
+  - P8
+  - PO7
+  - PO5
+  - PO3
+  - POz
+  - PO4
+  - PO6
+  - PO8
+  - O1
+  - CB1
+  - Oz
+  - O2
+  - CB2
+bci_application:
+  applications:
+  - target_image_detection
+  - collaborative_BCI
+  environment: laboratory
+  online_feedback: true
+cross_validation:
+  cv_method: holdout
+  evaluation_type:
+  - within_subject
+  - cross_session
+data_structure:
+  n_trials:
+    nontarget: 4032
+    target: 168
+  trials_context: per subject across both sessions
+documentation:
+  country: CN
+  data_url: https://figshare.com/articles/dataset/12824771
+  doi: 10.3389/fnins.2020.579469
+  institution: Chinese Academy of Sciences
+  investigators:
+  - Li Zheng
+  - Sen Sun
+  - Hongze Zhao
+  - Weihua Pei
+  - Hongda Chen
+  - Xiaorong Gao
+  - Lijian Zhang
+  - Yijun Wang
+  license: CC-BY-4.0
+  publication_year: 2020
+experiment:
+  class_labels:
+  - Target
+  - NonTarget
+  events:
+    NonTarget: 1
+    Target: 2
+  feedback_type: visual
+  mode: offline
+  n_classes: 2
+  paradigm: p300
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_type: RSVP images
+  study_design: RSVP target detection (human vs non-human images); 14 subjects in 7 pairs, synchronized EEG recording
+  trial_duration: 1.0
+file_format: MATLAB
+paradigm_specific:
+  detected_paradigm: p300
+  soa_ms: 100.0
+participants:
+  age_max: 29
+  age_mean: 24.9
+  age_min: 23
+  gender:
+    female: 10
+    male: 4
+  handedness: all right-handed
+  health_status: healthy
+  n_subjects: 14
+  species: human
+runs_per_session: 3
+sessions_per_subject: 2
+signal_processing:
+  classifiers:
+  - HDCA
+  feature_extraction:
+  - SIM
+  - CSP
+  - TRCA
+  - PCA
+  frequency_bands:
+    bandpass:
+    - 2.0
+    - 30.0
+  spatial_filters:
+  - SIM
+  - CSP
+  - PCA
+  - CAR
+  - TRCA
+tags:
+  modality:
+  - ERP
+  pathology:
+  - Healthy
+  type:
+  - RSVP
