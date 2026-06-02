@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000205-blue)](https://doi.org/10.82901/nemar.nm000205)
+
 # RSVP collaborative BCI dataset from Zheng et al 2020
 
 RSVP collaborative BCI dataset from Zheng et al 2020.
