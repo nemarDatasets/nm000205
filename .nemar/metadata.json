@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "RSVP collaborative BCI dataset from Zheng et al 2020",
-  "description": "A collaborative brain-computer interface dataset based on rapid serial visual presentation (RSVP) paradigm, comprising synchronized EEG recordings from 14 healthy subjects (7 pairs) performing target image detection tasks. The dataset includes 62-channel EEG data sampled at 1000 Hz across 2 sessions with 3 runs each, annotated with p300 event-related potentials for target and non-target visual stimuli. This cross-session dataset supports the development and evaluation of collaborative BCI systems and machine learning classifiers for target detection in visual search tasks.",
-  "methods_description": "EEG data were acquired using a Neuroscan Synamps2 system at 1000 Hz sampling rate from 62 electrodes in standard 10-20 montage with vertex (Cz) reference. Subjects performed RSVP-based target detection tasks with 100 ms stimulus onset asynchrony, viewing rapid sequences of human and non-human images. Data were collected across 2 sessions per subject with 3 runs per session, with visual feedback provided during the task.",
+  "description": "This dataset comprises synchronized EEG recordings from 14 healthy subjects performing a collaborative rapid serial visual presentation (RSVP) task in pairs. The study implements a p300-based brain-computer interface for target image detection, with subjects discriminating between human and non-human images across two sessions. The dataset includes 62-channel EEG data sampled at 1000 Hz with standardized preprocessing and is designed to support BCI research and benchmarking studies. This is a MOABB-processed derivative of the original Zheng et al. 2020 study data.",
+  "methods_description": "EEG data were acquired using a Neuroscan Synamps2 system at 1000 Hz sampling rate from 62 electrodes in a standard 10-20 montage with vertex reference. Subjects performed RSVP target detection tasks in synchronized pairs across 2 sessions with 3 runs each. Visual stimuli were presented with 100 ms stimulus onset asynchrony, and trials were segmented from 0-1 s post-stimulus onset. Data were processed and standardized using the Mother of All BCI Benchmarks (MOABB) framework version 1.5.0.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -21,10 +21,15 @@
       "term": "EEG"
     },
     {
-      "term": "brain-computer interfaces"
+      "term": "p300"
     },
     {
-      "term": "p300"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "rapid serial visual presentation"
     },
     {
       "term": "Event-Related Potentials, P300",
@@ -33,19 +38,16 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
-      "term": "rapid serial visual presentation"
+      "term": "collaborative BCI"
     },
     {
       "term": "target detection"
     },
     {
-      "term": "collaborative BCI"
+      "term": "Healthy"
     },
     {
-      "term": "visual search"
-    },
-    {
-      "term": "target image detection"
+      "term": "ERP"
     }
   ],
   "related_identifiers": [
@@ -60,11 +62,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000205",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
       "relation_type": "References"
@@ -73,6 +70,11 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000205",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
@@ -81,15 +83,16 @@
     "eeg"
   ],
   "sizes": [
-    "5.7 GB (85 files)"
+    "12.7 GB (99 files)"
   ],
   "formats": [
     ".bdf",
     ".json",
+    ".mat",
     ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "d3b1fbc2f0d1dbeb97987f998463aa7f01d89e0164b8b355300cd26a8094a7d7"
+  "source_hash": "b589042320309d53e1d94d6b36dd7cf1bc9f5af62bbd64a44d921e28b3ecf430"
 }
