@@ -1,0 +1,85 @@
+{
+ "dataset": "nm000205",
+ "moabb_class": "Zheng2020",
+ "moabb_version_used": "1.5.0",
+ "retrieved": "2026-08-11",
+ "retrieved_by": "moabb.datasets.Zheng2020.data_path()",
+ "upstream_cache_root": "/expanse/lustre/scratch/bpinto/temp_project/sourcedata_staging/mne_data/MNE-Zheng2020-data",
+ "license": "CC-BY-4.0",
+ "doi": "10.3389/fnins.2020.579469",
+ "naming": "upstream_filenames_restored",
+ "n_files": 14,
+ "total_bytes": 7067596038,
+ "files": [
+  {
+   "file": "G1/G1D1.mat",
+   "bytes": 590664612,
+   "sha256": "a98aa04bb8967f3f2a3f406823a771f3ea6e8038c5236dd138abd1f783e57b58"
+  },
+  {
+   "file": "G1/G1D2.mat",
+   "bytes": 640540022,
+   "sha256": "66dcf93d6f99002c71ba6a505128560c619678a5d5fe3680591087a0d586f91f"
+  },
+  {
+   "file": "G2/G2D1.mat",
+   "bytes": 566125299,
+   "sha256": "6cdbacaa07de59030317432c8f96345db1f5f80980da2769be0654f2ba530c63"
+  },
+  {
+   "file": "G2/G2D2.mat",
+   "bytes": 527924414,
+   "sha256": "a511a132cbcb45dd7b055ae499bf8a876a1840c22015f5ab099e5e31bcd5e679"
+  },
+  {
+   "file": "G3/G3D1.mat",
+   "bytes": 592273350,
+   "sha256": "4e0f542e42d5a654b9f90946e5679c86ed1acfe5c6099a98e68a3e99ea56617d"
+  },
+  {
+   "file": "G3/G3D2.mat",
+   "bytes": 533296880,
+   "sha256": "7c4ca67c5ce0cd7e52bd909a355d533d770322201b813e3068dc4f302d51c568"
+  },
+  {
+   "file": "G4/G4D1.mat",
+   "bytes": 572674152,
+   "sha256": "ab9fa5806b8002b99f57fc561286cc1809d227e240530276b71db8ecf5d8d3f3"
+  },
+  {
+   "file": "G4/G4D2.mat",
+   "bytes": 540585770,
+   "sha256": "aa3a992aca05d74525597e22740cca4d9697e23153f56bb6ba0c9082bf92d6e9"
+  },
+  {
+   "file": "G5/G5D1.mat",
+   "bytes": 451215454,
+   "sha256": "b6c96bcd6104ca00a8ebe47dddd72276aca9f50873094ae886f0fb0fe3ac331a"
+  },
+  {
+   "file": "G5/G5D2.mat",
+   "bytes": 390023553,
+   "sha256": "fec9ab59ea718e98bb6a2ff566767b2f40b2eaac04e96e67522de972e6574042"
+  },
+  {
+   "file": "G6/G6D1.mat",
+   "bytes": 454968571,
+   "sha256": "55b5b0687332891c23dab2b0d1106f06939899039e0837c048af8df36f00309a"
+  },
+  {
+   "file": "G6/G6D2.mat",
+   "bytes": 424034249,
+   "sha256": "617911bc06c53aef18db4df3bf69689267cc28c3a3edec693ec792904bcc8fb2"
+  },
+  {
+   "file": "G7/G7D1.mat",
+   "bytes": 428844821,
+   "sha256": "9fe9b50dcffd3e89628963f69485aa54c2114713c604dc6463359e3270d46307"
+  },
+  {
+   "file": "G7/G7D2.mat",
+   "bytes": 354424891,
+   "sha256": "30bd30a2f30d4841a19941d20be019eace9d54ec6b0c429ed2c05a65350a8f98"
+  }
+ ]
+}
