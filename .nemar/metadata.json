@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "RSVP collaborative BCI dataset from Zheng et al 2020",
-  "description": "This dataset comprises synchronized EEG recordings from 14 healthy subjects performing a collaborative rapid serial visual presentation (RSVP) task in pairs. The study implements a p300-based brain-computer interface for target image detection, with subjects discriminating between human and non-human images across two sessions. The dataset includes 62-channel EEG data sampled at 1000 Hz with standardized preprocessing and is designed to support BCI research and benchmarking studies. This is a MOABB-processed derivative of the original Zheng et al. 2020 study data.",
-  "methods_description": "EEG data were acquired using a Neuroscan Synamps2 system at 1000 Hz sampling rate from 62 electrodes in a standard 10-20 montage with vertex reference. Subjects performed RSVP target detection tasks in synchronized pairs across 2 sessions with 3 runs each. Visual stimuli were presented with 100 ms stimulus onset asynchrony, and trials were segmented from 0-1 s post-stimulus onset. Data were processed and standardized using the Mother of All BCI Benchmarks (MOABB) framework version 1.5.0.",
+  "description": "A collaborative brain-computer interface dataset based on rapid serial visual presentation (RSVP) paradigm, comprising synchronized EEG recordings from 14 healthy subjects (7 pairs) performing target image detection tasks. This is a BIDS-formatted derivative of the original dataset published by Zheng et al. 2020. The dataset includes 62-channel EEG data sampled at 1000 Hz across 2 sessions per subject, with event-related potential (ERP) markers for target and non-target visual stimuli, designed to support BCI research and benchmarking studies.",
+  "methods_description": "EEG data were acquired using a Neuroscan Synamps2 system at 1000 Hz sampling rate from 62 electrodes positioned according to the standard 10-20 montage with vertex (Cz) reference. Subjects performed RSVP-based target detection tasks involving human vs. non-human image classification with 100 ms stimulus onset asynchrony. Data were collected across 2 sessions per subject with 3 runs per session, yielding 168 target and 4032 non-target trials per subject.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -21,33 +21,37 @@
       "term": "EEG"
     },
     {
-      "term": "p300"
+      "term": "brain-computer interfaces"
     },
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "rapid serial visual presentation"
-    },
-    {
-      "term": "Event-Related Potentials, P300",
+      "term": "Evoked Potentials, P300",
       "subject_scheme": "MeSH",
       "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
-      "term": "collaborative BCI"
+      "term": "p300"
+    },
+    {
+      "term": "rapid serial visual presentation"
     },
     {
       "term": "target detection"
     },
     {
-      "term": "Healthy"
+      "term": "collaborative BCI"
     },
     {
       "term": "ERP"
+    },
+    {
+      "term": "Healthy"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "MOABB"
     }
   ],
   "related_identifiers": [
@@ -94,5 +98,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "b589042320309d53e1d94d6b36dd7cf1bc9f5af62bbd64a44d921e28b3ecf430"
+  "source_hash": "0151880562e51271efc06cb87be3624250dc7658dc9e4d22892e0e7c7b3b3985"
 }
