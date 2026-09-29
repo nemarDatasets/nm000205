@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "RSVP collaborative BCI dataset from Zheng et al 2020",
-  "description": "This dataset contains EEG recordings from a collaborative brain-computer interface (BCI) study using a rapid serial visual presentation (RSVP) paradigm with human vs non-human target image detection. Fourteen healthy right-handed participants were recorded in synchronized pairs (7 dyads) across two sessions each, using 62-channel EEG. The data are converted into BIDS format with HED-annotated events for target and non-target stimuli, and derived using MOABB.",
-  "methods_description": "EEG was recorded at 1000 Hz using a 62-channel Neuroscan Synamps2 system referenced to vertex (Cz), following the standard_1020 montage. Participants performed an RSVP target detection task (human vs non-human images) in synchronized pairs, with visual stimuli presented at a 100 ms stimulus onset asynchrony, across two sessions and three runs per session.",
+  "description": "A cross-session EEG dataset for collaborative brain-computer interfaces based on rapid serial visual presentation (RSVP). Fourteen healthy participants, organized in seven pairs, completed two sessions of a target image detection task (human vs non-human images) with synchronized 62-channel EEG recording. The dataset supports research on P300/ERP-based target detection and collaborative BCI methods.",
+  "methods_description": "EEG was recorded with a Neuroscan Synamps2 system at 1000 Hz from 62 channels, referenced to the vertex (Cz), with a 50 Hz line frequency. Images were presented in RSVP streams with a 100 ms stimulus onset asynchrony. Each subject completed 2 sessions of 3 runs, with pairs recorded simultaneously. Target and non-target events are annotated with HED tags.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -21,17 +21,19 @@
       "term": "EEG"
     },
     {
-      "term": "Event-Related Potentials, P300",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+      "term": "event-related potentials"
+    },
+    {
+      "term": "P300"
+    },
+    {
+      "term": "rapid serial visual presentation"
     },
     {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "RSVP"
     },
     {
       "term": "collaborative BCI"
@@ -73,7 +75,7 @@
     "eeg"
   ],
   "sizes": [
-    "12.7 GB (99 files)"
+    "11.87 GB (99 files)"
   ],
   "formats": [
     ".bdf",
