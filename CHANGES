@@ -1,0 +1,4 @@
+1.0.5 2026-10-17
+  - sourcedata_provenance.json: each G{g}/G{g}D{1,2}.mat now lists the two subjects it holds
+    ("subjects": ["2g-1", "2g"], MOABB Zheng2020 numbering), so a single subject's prefetch takes its
+    pair's 2 files instead of all 14. No data file changed.
